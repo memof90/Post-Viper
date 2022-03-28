@@ -24,6 +24,21 @@
 		8D1F245527EFD858009BD041 /* DetailPostRouterProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D1F245427EFD858009BD041 /* DetailPostRouterProtocol.swift */; };
 		8D1F245827EFDB75009BD041 /* DetailPostViewProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D1F245727EFDB75009BD041 /* DetailPostViewProtocol.swift */; };
 		8D1F245A27EFE2EC009BD041 /* DetailPostAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D1F245927EFE2EC009BD041 /* DetailPostAssembly.swift */; };
+		8D29124827F2567F00D6F5E8 /* MockBaseService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D29124727F2567F00D6F5E8 /* MockBaseService.swift */; };
+		8D29124E27F2584800D6F5E8 /* MockPostRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D29124D27F2584800D6F5E8 /* MockPostRouter.swift */; };
+		8D29125127F2599900D6F5E8 /* MockPostRepositoryInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D29125027F2599900D6F5E8 /* MockPostRepositoryInput.swift */; };
+		8D29125427F259AE00D6F5E8 /* MockPostRepositoryOuput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D29125327F259AE00D6F5E8 /* MockPostRepositoryOuput.swift */; };
+		8D29125627F25BAE00D6F5E8 /* MockPostPresenterInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D29125527F25BAE00D6F5E8 /* MockPostPresenterInput.swift */; };
+		8D29125927F25BC200D6F5E8 /* MockPostPresenterOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D29125827F25BC200D6F5E8 /* MockPostPresenterOutput.swift */; };
+		8D29125B27F25E1300D6F5E8 /* MockPostService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D29125A27F25E1300D6F5E8 /* MockPostService.swift */; };
+		8D29125D27F25EC400D6F5E8 /* MockInteractorInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D29125C27F25EC400D6F5E8 /* MockInteractorInput.swift */; };
+		8D29125F27F25ED200D6F5E8 /* MockInteractorOuput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D29125E27F25ED200D6F5E8 /* MockInteractorOuput.swift */; };
+		8D29126727F261FD00D6F5E8 /* PostViewControllerTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D29126627F261FD00D6F5E8 /* PostViewControllerTest.swift */; };
+		8D29126927F263EA00D6F5E8 /* PostRespositoryTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D29126827F263EA00D6F5E8 /* PostRespositoryTest.swift */; };
+		8D29126B27F265A900D6F5E8 /* PostPresenterTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D29126A27F265A900D6F5E8 /* PostPresenterTest.swift */; };
+		8D29126D27F26A3F00D6F5E8 /* GetPostInteractorTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D29126C27F26A3F00D6F5E8 /* GetPostInteractorTest.swift */; };
+		8D29126F27F26CA900D6F5E8 /* LoadingPostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D29126E27F26CA900D6F5E8 /* LoadingPostViewController.swift */; };
+		8D29127427F26E5200D6F5E8 /* Post.json in Resources */ = {isa = PBXBuildFile; fileRef = 8D29127327F26E5200D6F5E8 /* Post.json */; };
 		8D4AFE7527ED6364009634C3 /* PostDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D4AFE7427ED6364009634C3 /* PostDataSource.swift */; };
 		8D4AFE7927ED66CA009634C3 /* PostTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D4AFE7727ED66CA009634C3 /* PostTableViewCell.swift */; };
 		8D4AFE7A27ED66CA009634C3 /* PostTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8D4AFE7827ED66CA009634C3 /* PostTableViewCell.xib */; };
@@ -66,6 +81,23 @@
 		8DFB716827F21F4E00E5F91B /* CommentsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8DFB716627F21F4E00E5F91B /* CommentsTableViewCell.xib */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		8D29122B27F255C900D6F5E8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8D5CE76C27ED24E00062CFED /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8D5CE77327ED24E00062CFED;
+			remoteInfo = postViperApp;
+		};
+		8D29123A27F255DC00D6F5E8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8D5CE76C27ED24E00062CFED /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8D5CE77327ED24E00062CFED;
+			remoteInfo = postViperApp;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
 		8D1F243227EFAEB5009BD041 /* DetailPostViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailPostViewController.swift; sourceTree = "<group>"; };
 		8D1F243927EFBF83009BD041 /* CommentsDetailServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentsDetailServices.swift; sourceTree = "<group>"; };
@@ -84,6 +116,23 @@
 		8D1F245427EFD858009BD041 /* DetailPostRouterProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailPostRouterProtocol.swift; sourceTree = "<group>"; };
 		8D1F245727EFDB75009BD041 /* DetailPostViewProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailPostViewProtocol.swift; sourceTree = "<group>"; };
 		8D1F245927EFE2EC009BD041 /* DetailPostAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailPostAssembly.swift; sourceTree = "<group>"; };
+		8D29122727F255C900D6F5E8 /* postViperAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = postViperAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		8D29123427F255DC00D6F5E8 /* postViperAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = postViperAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		8D29124727F2567F00D6F5E8 /* MockBaseService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockBaseService.swift; sourceTree = "<group>"; };
+		8D29124D27F2584800D6F5E8 /* MockPostRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockPostRouter.swift; sourceTree = "<group>"; };
+		8D29125027F2599900D6F5E8 /* MockPostRepositoryInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockPostRepositoryInput.swift; sourceTree = "<group>"; };
+		8D29125327F259AE00D6F5E8 /* MockPostRepositoryOuput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockPostRepositoryOuput.swift; sourceTree = "<group>"; };
+		8D29125527F25BAE00D6F5E8 /* MockPostPresenterInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockPostPresenterInput.swift; sourceTree = "<group>"; };
+		8D29125827F25BC200D6F5E8 /* MockPostPresenterOutput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockPostPresenterOutput.swift; sourceTree = "<group>"; };
+		8D29125A27F25E1300D6F5E8 /* MockPostService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockPostService.swift; sourceTree = "<group>"; };
+		8D29125C27F25EC400D6F5E8 /* MockInteractorInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockInteractorInput.swift; sourceTree = "<group>"; };
+		8D29125E27F25ED200D6F5E8 /* MockInteractorOuput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockInteractorOuput.swift; sourceTree = "<group>"; };
+		8D29126627F261FD00D6F5E8 /* PostViewControllerTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostViewControllerTest.swift; sourceTree = "<group>"; };
+		8D29126827F263EA00D6F5E8 /* PostRespositoryTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostRespositoryTest.swift; sourceTree = "<group>"; };
+		8D29126A27F265A900D6F5E8 /* PostPresenterTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostPresenterTest.swift; sourceTree = "<group>"; };
+		8D29126C27F26A3F00D6F5E8 /* GetPostInteractorTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetPostInteractorTest.swift; sourceTree = "<group>"; };
+		8D29126E27F26CA900D6F5E8 /* LoadingPostViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingPostViewController.swift; sourceTree = "<group>"; };
+		8D29127327F26E5200D6F5E8 /* Post.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = Post.json; path = ../../../../../../../../Users/memofigueredo/Downloads/Post.json; sourceTree = "<group>"; };
 		8D4AFE7427ED6364009634C3 /* PostDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostDataSource.swift; sourceTree = "<group>"; };
 		8D4AFE7727ED66CA009634C3 /* PostTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostTableViewCell.swift; sourceTree = "<group>"; };
 		8D4AFE7827ED66CA009634C3 /* PostTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PostTableViewCell.xib; sourceTree = "<group>"; };
@@ -129,6 +178,20 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		8D29122427F255C900D6F5E8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8D29123127F255DC00D6F5E8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		8D5CE77127ED24E00062CFED /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -230,6 +293,155 @@
 			path = Configurator;
 			sourceTree = "<group>";
 		};
+		8D29122827F255C900D6F5E8 /* postViperAppTests */ = {
+			isa = PBXGroup;
+			children = (
+				8D29124627F2565600D6F5E8 /* Services */,
+				8D29123F27F255F100D6F5E8 /* Modules */,
+			);
+			path = postViperAppTests;
+			sourceTree = "<group>";
+		};
+		8D29123527F255DC00D6F5E8 /* postViperAppUITests */ = {
+			isa = PBXGroup;
+			children = (
+				8D29126E27F26CA900D6F5E8 /* LoadingPostViewController.swift */,
+			);
+			path = postViperAppUITests;
+			sourceTree = "<group>";
+		};
+		8D29123F27F255F100D6F5E8 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				8D29124027F255F900D6F5E8 /* Post */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		8D29124027F255F900D6F5E8 /* Post */ = {
+			isa = PBXGroup;
+			children = (
+				8D29124527F2564600D6F5E8 /* Tests */,
+				8D29124427F2563C00D6F5E8 /* Stubs */,
+				8D29124327F2563700D6F5E8 /* Mocks */,
+			);
+			path = Post;
+			sourceTree = "<group>";
+		};
+		8D29124327F2563700D6F5E8 /* Mocks */ = {
+			isa = PBXGroup;
+			children = (
+				8D29124C27F2581500D6F5E8 /* Router */,
+				8D29124B27F2580D00D6F5E8 /* Respository */,
+				8D29124A27F2580500D6F5E8 /* Presenter */,
+				8D29124927F257FF00D6F5E8 /* Interactor */,
+			);
+			path = Mocks;
+			sourceTree = "<group>";
+		};
+		8D29124427F2563C00D6F5E8 /* Stubs */ = {
+			isa = PBXGroup;
+			children = (
+				8D29127327F26E5200D6F5E8 /* Post.json */,
+			);
+			path = Stubs;
+			sourceTree = "<group>";
+		};
+		8D29124527F2564600D6F5E8 /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				8D29126527F261D100D6F5E8 /* View */,
+				8D29126427F261CA00D6F5E8 /* Repository */,
+				8D29126327F261C300D6F5E8 /* Presenter */,
+				8D29126227F261BC00D6F5E8 /* Interactor */,
+			);
+			path = Tests;
+			sourceTree = "<group>";
+		};
+		8D29124627F2565600D6F5E8 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				8D29124727F2567F00D6F5E8 /* MockBaseService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		8D29124927F257FF00D6F5E8 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				8D29125C27F25EC400D6F5E8 /* MockInteractorInput.swift */,
+				8D29125E27F25ED200D6F5E8 /* MockInteractorOuput.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		8D29124A27F2580500D6F5E8 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				8D29125527F25BAE00D6F5E8 /* MockPostPresenterInput.swift */,
+				8D29125827F25BC200D6F5E8 /* MockPostPresenterOutput.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		8D29124B27F2580D00D6F5E8 /* Respository */ = {
+			isa = PBXGroup;
+			children = (
+				8D29124F27F2597100D6F5E8 /* Remote */,
+				8D29125027F2599900D6F5E8 /* MockPostRepositoryInput.swift */,
+				8D29125327F259AE00D6F5E8 /* MockPostRepositoryOuput.swift */,
+			);
+			path = Respository;
+			sourceTree = "<group>";
+		};
+		8D29124C27F2581500D6F5E8 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				8D29124D27F2584800D6F5E8 /* MockPostRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		8D29124F27F2597100D6F5E8 /* Remote */ = {
+			isa = PBXGroup;
+			children = (
+				8D29125A27F25E1300D6F5E8 /* MockPostService.swift */,
+			);
+			path = Remote;
+			sourceTree = "<group>";
+		};
+		8D29126227F261BC00D6F5E8 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				8D29126C27F26A3F00D6F5E8 /* GetPostInteractorTest.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		8D29126327F261C300D6F5E8 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				8D29126A27F265A900D6F5E8 /* PostPresenterTest.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		8D29126427F261CA00D6F5E8 /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+				8D29126827F263EA00D6F5E8 /* PostRespositoryTest.swift */,
+			);
+			path = Repository;
+			sourceTree = "<group>";
+		};
+		8D29126527F261D100D6F5E8 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				8D29126627F261FD00D6F5E8 /* PostViewControllerTest.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		8D4AFE7327ED633F009634C3 /* PostDataSource */ = {
 			isa = PBXGroup;
 			children = (
@@ -251,6 +463,8 @@
 			isa = PBXGroup;
 			children = (
 				8D5CE77627ED24E00062CFED /* postViperApp */,
+				8D29122827F255C900D6F5E8 /* postViperAppTests */,
+				8D29123527F255DC00D6F5E8 /* postViperAppUITests */,
 				8D5CE77527ED24E00062CFED /* Products */,
 			);
 			sourceTree = "<group>";
@@ -259,6 +473,8 @@
 			isa = PBXGroup;
 			children = (
 				8D5CE77427ED24E00062CFED /* postViperApp.app */,
+				8D29122727F255C900D6F5E8 /* postViperAppTests.xctest */,
+				8D29123427F255DC00D6F5E8 /* postViperAppUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -480,6 +696,42 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		8D29122627F255C900D6F5E8 /* postViperAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8D29122F27F255C900D6F5E8 /* Build configuration list for PBXNativeTarget "postViperAppTests" */;
+			buildPhases = (
+				8D29122327F255C900D6F5E8 /* Sources */,
+				8D29122427F255C900D6F5E8 /* Frameworks */,
+				8D29122527F255C900D6F5E8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8D29122C27F255C900D6F5E8 /* PBXTargetDependency */,
+			);
+			name = postViperAppTests;
+			productName = postViperAppTests;
+			productReference = 8D29122727F255C900D6F5E8 /* postViperAppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		8D29123327F255DC00D6F5E8 /* postViperAppUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8D29123C27F255DC00D6F5E8 /* Build configuration list for PBXNativeTarget "postViperAppUITests" */;
+			buildPhases = (
+				8D29123027F255DC00D6F5E8 /* Sources */,
+				8D29123127F255DC00D6F5E8 /* Frameworks */,
+				8D29123227F255DC00D6F5E8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8D29123B27F255DC00D6F5E8 /* PBXTargetDependency */,
+			);
+			name = postViperAppUITests;
+			productName = postViperAppUITests;
+			productReference = 8D29123427F255DC00D6F5E8 /* postViperAppUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
 		8D5CE77327ED24E00062CFED /* postViperApp */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8D5CE78B27ED24E30062CFED /* Build configuration list for PBXNativeTarget "postViperApp" */;
@@ -507,6 +759,14 @@
 				LastSwiftUpdateCheck = 1330;
 				LastUpgradeCheck = 1330;
 				TargetAttributes = {
+					8D29122627F255C900D6F5E8 = {
+						CreatedOnToolsVersion = 13.3;
+						TestTargetID = 8D5CE77327ED24E00062CFED;
+					};
+					8D29123327F255DC00D6F5E8 = {
+						CreatedOnToolsVersion = 13.3;
+						TestTargetID = 8D5CE77327ED24E00062CFED;
+					};
 					8D5CE77327ED24E00062CFED = {
 						CreatedOnToolsVersion = 13.3;
 					};
@@ -526,11 +786,28 @@
 			projectRoot = "";
 			targets = (
 				8D5CE77327ED24E00062CFED /* postViperApp */,
+				8D29122627F255C900D6F5E8 /* postViperAppTests */,
+				8D29123327F255DC00D6F5E8 /* postViperAppUITests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		8D29122527F255C900D6F5E8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8D29127427F26E5200D6F5E8 /* Post.json in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8D29123227F255DC00D6F5E8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		8D5CE77227ED24E00062CFED /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -548,6 +825,34 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		8D29122327F255C900D6F5E8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8D29125927F25BC200D6F5E8 /* MockPostPresenterOutput.swift in Sources */,
+				8D29125D27F25EC400D6F5E8 /* MockInteractorInput.swift in Sources */,
+				8D29125B27F25E1300D6F5E8 /* MockPostService.swift in Sources */,
+				8D29126727F261FD00D6F5E8 /* PostViewControllerTest.swift in Sources */,
+				8D29125127F2599900D6F5E8 /* MockPostRepositoryInput.swift in Sources */,
+				8D29126927F263EA00D6F5E8 /* PostRespositoryTest.swift in Sources */,
+				8D29125F27F25ED200D6F5E8 /* MockInteractorOuput.swift in Sources */,
+				8D29124827F2567F00D6F5E8 /* MockBaseService.swift in Sources */,
+				8D29126B27F265A900D6F5E8 /* PostPresenterTest.swift in Sources */,
+				8D29125427F259AE00D6F5E8 /* MockPostRepositoryOuput.swift in Sources */,
+				8D29124E27F2584800D6F5E8 /* MockPostRouter.swift in Sources */,
+				8D29125627F25BAE00D6F5E8 /* MockPostPresenterInput.swift in Sources */,
+				8D29126D27F26A3F00D6F5E8 /* GetPostInteractorTest.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8D29123027F255DC00D6F5E8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8D29126F27F26CA900D6F5E8 /* LoadingPostViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		8D5CE77027ED24E00062CFED /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -607,6 +912,19 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		8D29122C27F255C900D6F5E8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8D5CE77327ED24E00062CFED /* postViperApp */;
+			targetProxy = 8D29122B27F255C900D6F5E8 /* PBXContainerItemProxy */;
+		};
+		8D29123B27F255DC00D6F5E8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8D5CE77327ED24E00062CFED /* postViperApp */;
+			targetProxy = 8D29123A27F255DC00D6F5E8 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin PBXVariantGroup section */
 		8D5CE77D27ED24E00062CFED /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
@@ -627,6 +945,76 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		8D29122D27F255C900D6F5E8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = S52ZRS44GD;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.detotounpoquito.postViperAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/postViperApp.app/postViperApp";
+			};
+			name = Debug;
+		};
+		8D29122E27F255C900D6F5E8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = S52ZRS44GD;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.detotounpoquito.postViperAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/postViperApp.app/postViperApp";
+			};
+			name = Release;
+		};
+		8D29123D27F255DC00D6F5E8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = S52ZRS44GD;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.detotounpoquito.postViperAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = postViperApp;
+			};
+			name = Debug;
+		};
+		8D29123E27F255DC00D6F5E8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = S52ZRS44GD;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.detotounpoquito.postViperAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = postViperApp;
+			};
+			name = Release;
+		};
 		8D5CE78927ED24E30062CFED /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -800,6 +1188,24 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		8D29122F27F255C900D6F5E8 /* Build configuration list for PBXNativeTarget "postViperAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8D29122D27F255C900D6F5E8 /* Debug */,
+				8D29122E27F255C900D6F5E8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8D29123C27F255DC00D6F5E8 /* Build configuration list for PBXNativeTarget "postViperAppUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8D29123D27F255DC00D6F5E8 /* Debug */,
+				8D29123E27F255DC00D6F5E8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		8D5CE76F27ED24E00062CFED /* Build configuration list for PBXProject "postViperApp" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
