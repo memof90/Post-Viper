@@ -249,8 +249,7 @@ extension PostsViewController: UITableViewDelegate {
         let deleteAction = UIContextualAction(style: .destructive, title: "") { [weak self] action, sourceView, completionHandler in
             
             self?.posts.remove(at: indexPath.row)
-            
-            self?.refreshData()
+            tableView.deleteRows(at: [indexPath], with: .fade)
             
             completionHandler(true)
         }
