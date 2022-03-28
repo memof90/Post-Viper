@@ -148,19 +148,9 @@ extension PostsViewController: UITableViewDataSource {
         
        let cell = tableView.cellForRow(at: indexPath) as! PostTableViewCell
         cell.CircleImageView.isHidden = true
-        isFavorite[indexPath.row] = true
         showDetail(of: posts[indexPath.row])
         
     }
-    
-    func tableView(_ tableView: UITableView, didDeselectRowAt indexPath: IndexPath) {
-        
-        let cell = tableView.cellForRow(at: indexPath) as! PostTableViewCell
-        cell.CircleImageView.image = UIImage(systemName: "circlebadge.fill")
-        cell.CircleImageView.tintColor = .link
-        isFavorite[indexPath.row] = false
-    }
-    
     
     func tableView(_ tableView: UITableView, leadingSwipeActionsConfigurationForRowAt indexPath: IndexPath) -> UISwipeActionsConfiguration? {
         
@@ -200,10 +190,10 @@ extension PostsViewController: UITableViewDelegate {
         if isFavorite[indexPath.row] == true {
             cell.TitleText.text = posts[indexPath.row].title
             cell.favoriteImageView.isHidden = posts[indexPath.row].isFavorite ? false: true
-            
         } else {
             cell.TitleText.text = posts[indexPath.row].title
             cell.favoriteImageView.isHidden = posts[indexPath.row].isFavorite ? false: true
+            cell.CircleImageView.isHidden = false
         }
         
         cell.selectionStyle = .none
