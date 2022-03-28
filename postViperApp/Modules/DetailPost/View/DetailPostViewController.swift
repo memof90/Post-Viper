@@ -36,7 +36,13 @@ final class DetailPostViewController: UIViewController, AnyDetailPostViewProtoco
     
     @IBOutlet weak var websiteLabel: UILabel!
     
-    @IBOutlet weak var commentsTableView: UITableView!
+    @IBOutlet weak var commentsTableView: UITableView! {
+        didSet {
+            commentsTableView.dataSource = self
+            commentsTableView.delegate = self
+            commentsTableView.register(CommentsTableViewCell.nib, forCellReuseIdentifier: CommentsTableViewCell.reuseIdentifier)
+        }
+    }
     
     
     override func viewDidLoad() {
@@ -45,6 +51,11 @@ final class DetailPostViewController: UIViewController, AnyDetailPostViewProtoco
         presenter?.getDetailComment()
         presenter?.getDetailUser()
         configureView()
+    }
+    
+    //     MARK: - Refresh Data
+    private func refreshData() {
+        commentsTableView.reloadData()
     }
     
 }
@@ -69,6 +80,7 @@ extension DetailPostViewController: AnyDetailPostPresenterOutputProtocol {
     func didRetrieveDetailComments() {
         guard let comment = presenter?.detailComment else { return }
         self.comments = comment
+        refreshData()
         print(comment)
     }
     
@@ -88,3 +100,32 @@ extension DetailPostViewController: AnyDetailPostPresenterOutputProtocol {
 }
 
 
+// MARK: - Protocol UITableViewDataSource
+extension DetailPostViewController: UITableViewDataSource {
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return comments.count
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        configureCommentsCell(tableView: tableView, indexPath: indexPath)
+    }
+    
+}
+
+
+// MARK: - Protocol UITableViewDelegate
+extension DetailPostViewController: UITableViewDelegate {
+    
+    private func configureCommentsCell(tableView: UITableView, indexPath: IndexPath) -> UITableViewCell {
+        
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: CommentsTableViewCell.reuseIdentifier, for: indexPath) as? CommentsTableViewCell else { return UITableViewCell() }
+            
+        cell.emailTextLabel.text = comments[indexPath.row].email
+        cell.commentTextLabel.text = comments[indexPath.row].description
+            
+        
+        cell.selectionStyle = .none
+        return cell
+    }
+}
