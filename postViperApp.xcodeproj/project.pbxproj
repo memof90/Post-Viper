@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8D0740282829C08000D0F497 /* Post.json in Resources */ = {isa = PBXBuildFile; fileRef = 8D0740272829C08000D0F497 /* Post.json */; };
 		8D1F243327EFAEB5009BD041 /* DetailPostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D1F243227EFAEB5009BD041 /* DetailPostViewController.swift */; };
 		8D1F243A27EFBF83009BD041 /* CommentsDetailServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D1F243927EFBF83009BD041 /* CommentsDetailServices.swift */; };
 		8D1F243C27EFBF93009BD041 /* CommentsDetailServicesProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D1F243B27EFBF93009BD041 /* CommentsDetailServicesProtocol.swift */; };
@@ -38,7 +39,6 @@
 		8D29126B27F265A900D6F5E8 /* PostPresenterTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D29126A27F265A900D6F5E8 /* PostPresenterTest.swift */; };
 		8D29126D27F26A3F00D6F5E8 /* GetPostInteractorTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D29126C27F26A3F00D6F5E8 /* GetPostInteractorTest.swift */; };
 		8D29126F27F26CA900D6F5E8 /* LoadingPostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D29126E27F26CA900D6F5E8 /* LoadingPostViewController.swift */; };
-		8D29127427F26E5200D6F5E8 /* Post.json in Resources */ = {isa = PBXBuildFile; fileRef = 8D29127327F26E5200D6F5E8 /* Post.json */; };
 		8D4AFE7527ED6364009634C3 /* PostDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D4AFE7427ED6364009634C3 /* PostDataSource.swift */; };
 		8D4AFE7927ED66CA009634C3 /* PostTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D4AFE7727ED66CA009634C3 /* PostTableViewCell.swift */; };
 		8D4AFE7A27ED66CA009634C3 /* PostTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8D4AFE7827ED66CA009634C3 /* PostTableViewCell.xib */; };
@@ -99,6 +99,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		8D0740272829C08000D0F497 /* Post.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Post.json; sourceTree = "<group>"; };
 		8D1F243227EFAEB5009BD041 /* DetailPostViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailPostViewController.swift; sourceTree = "<group>"; };
 		8D1F243927EFBF83009BD041 /* CommentsDetailServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentsDetailServices.swift; sourceTree = "<group>"; };
 		8D1F243B27EFBF93009BD041 /* CommentsDetailServicesProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentsDetailServicesProtocol.swift; sourceTree = "<group>"; };
@@ -132,7 +133,6 @@
 		8D29126A27F265A900D6F5E8 /* PostPresenterTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostPresenterTest.swift; sourceTree = "<group>"; };
 		8D29126C27F26A3F00D6F5E8 /* GetPostInteractorTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetPostInteractorTest.swift; sourceTree = "<group>"; };
 		8D29126E27F26CA900D6F5E8 /* LoadingPostViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingPostViewController.swift; sourceTree = "<group>"; };
-		8D29127327F26E5200D6F5E8 /* Post.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = Post.json; path = ../../../../../../../../Users/memofigueredo/Downloads/Post.json; sourceTree = "<group>"; };
 		8D4AFE7427ED6364009634C3 /* PostDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostDataSource.swift; sourceTree = "<group>"; };
 		8D4AFE7727ED66CA009634C3 /* PostTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostTableViewCell.swift; sourceTree = "<group>"; };
 		8D4AFE7827ED66CA009634C3 /* PostTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PostTableViewCell.xib; sourceTree = "<group>"; };
@@ -202,6 +202,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8D0740262829C06100D0F497 /* Stubs */ = {
+			isa = PBXGroup;
+			children = (
+				8D0740272829C08000D0F497 /* Post.json */,
+			);
+			path = Stubs;
+			sourceTree = "<group>";
+		};
 		8D1F242D27EFAE75009BD041 /* View */ = {
 			isa = PBXGroup;
 			children = (
@@ -321,8 +329,8 @@
 		8D29124027F255F900D6F5E8 /* Post */ = {
 			isa = PBXGroup;
 			children = (
+				8D0740262829C06100D0F497 /* Stubs */,
 				8D29124527F2564600D6F5E8 /* Tests */,
-				8D29124427F2563C00D6F5E8 /* Stubs */,
 				8D29124327F2563700D6F5E8 /* Mocks */,
 			);
 			path = Post;
@@ -337,14 +345,6 @@
 				8D29124927F257FF00D6F5E8 /* Interactor */,
 			);
 			path = Mocks;
-			sourceTree = "<group>";
-		};
-		8D29124427F2563C00D6F5E8 /* Stubs */ = {
-			isa = PBXGroup;
-			children = (
-				8D29127327F26E5200D6F5E8 /* Post.json */,
-			);
-			path = Stubs;
 			sourceTree = "<group>";
 		};
 		8D29124527F2564600D6F5E8 /* Tests */ = {
@@ -797,7 +797,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8D29127427F26E5200D6F5E8 /* Post.json in Resources */,
+				8D0740282829C08000D0F497 /* Post.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
