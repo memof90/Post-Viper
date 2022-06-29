@@ -613,7 +613,6 @@
 			children = (
 				8D5CE7C527ED31C30062CFED /* PostsRouter.swift */,
 				8D5CE7C727ED31D00062CFED /* PostsRouterProtocol.swift */,
-				8D5CE7B427ED2A940062CFED /* PostService.swift */,
 			);
 			path = Router;
 			sourceTree = "<group>";
@@ -644,6 +643,7 @@
 		8D5CE7B327ED2A6A0062CFED /* Remote */ = {
 			isa = PBXGroup;
 			children = (
+				8D5CE7B427ED2A940062CFED /* PostService.swift */,
 				8D5CE7B727ED2AB10062CFED /* PostServiceProtocol.swift */,
 			);
 			path = Remote;
